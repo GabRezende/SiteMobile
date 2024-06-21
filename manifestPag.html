@@ -49,47 +49,80 @@
     </p>
     </div>
 
-    <div id="slideshow">
-        <img src="./assets/cn.jpg" alt="Imagem 1" class="mySlides">
-        <img src="./assets/fd.jpg" alt="Imagem 2" class="mySlides">
-        <img src="./assets/hdm.jpg" alt="Imagem 3" class="mySlides">
-        <img src="./assets/lc.jpg" alt="Imagem 4" class="mySlides">
-        <img src="./assets/thot.jpg" alt="Imagem 5" class="mySlides">
-        <img src="./assets/ws.jpg" alt="Imagem 6" class="mySlides">
-
-        <!-- Adicione mais imagens conforme necessário -->
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="texto">
+    <h2>  
+        <br>
+        <br>
+        CONHEÇA NOSSA ARTE 
+        <br>
+    </h2>
     </div>
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+   
+    <link rel="stylesheet" href="stylee.css">
+
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"> 
+                <img src="./assets/cn.jpg" alt="">
+                <p> legenda da foto</p>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="./assets/fd.jpg" alt="">
+                <p> legenda da foto</p>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="./assets/hdm.jpg" alt="">
+                <p> legenda da foto</p>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="./assets/lc.jpg" alt="">
+                <p> legenda da foto</p>
+            </div>
+            <div class="swiper-slide"> 
+                <img src="./assets/thot.jpg" alt="">
+                <p> legenda da foto</p>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>        
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script>
-    var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 2000); // Muda a imagem a cada 2 segundos
-}
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
 
-function plusSlides(n) {
-  slideIndex += n-1;
-  showSlides();    
-}
+        });
 
-// Funções para mostrar slides individuais (opcional)
-function currentSlide(n){
-  slideIndex = n-1;
-  showSlides();
-}
-</script>
+    </script>
+
+<div class="espaço">
+</div>
+
+</div>
+
+
+<footer>
+	<p>&copy; 2024 - Todos os direitos reservados</p>
+</footer>
 
 
     </body>
