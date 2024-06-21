@@ -49,5 +49,48 @@
     </p>
     </div>
 
+    <div id="slideshow">
+        <img src="./assets/cn.jpg" alt="Imagem 1" class="mySlides">
+        <img src="./assets/fd.jpg" alt="Imagem 2" class="mySlides">
+        <img src="./assets/hdm.jpg" alt="Imagem 3" class="mySlides">
+        <img src="./assets/lc.jpg" alt="Imagem 4" class="mySlides">
+        <img src="./assets/thot.jpg" alt="Imagem 5" class="mySlides">
+        <img src="./assets/ws.jpg" alt="Imagem 6" class="mySlides">
+
+        <!-- Adicione mais imagens conforme necessário -->
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Muda a imagem a cada 2 segundos
+}
+
+function plusSlides(n) {
+  slideIndex += n-1;
+  showSlides();    
+}
+
+// Funções para mostrar slides individuais (opcional)
+function currentSlide(n){
+  slideIndex = n-1;
+  showSlides();
+}
+</script>
+
+
     </body>
     </html>
