@@ -27,7 +27,7 @@
 .texto{
   align-content: center;
   font-size: 20px;
-  background-color: #FFFFCC;
+  background-color: #f8f27c;
   color: black;
   font-style:unset;
 
@@ -36,7 +36,7 @@
 .texto1{
   align-items: center;
   font-size: 14px;
-  background-color: #FFFFCC;
+  background-color: #f8f27c;
   color: black;
 }
 
@@ -60,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFCC;
+  background-color: #f8f27c;
 }
 svg{
   width: 100%;
@@ -127,18 +127,19 @@ path:hover {
 
 /*stylos e ferramentas do menu*/
 .menu-btn {
-  background-color: #e9ebcb; /* Cor de fundo do botão */
-  color: #18361C; /* Cor do texto */
+  background-color: #151e3d; /* Cor de fundo do botão */
+  color: #add8e6; /* Cor do texto */
   border: none; /* Removendo borda */
   padding: 10px; /* Espaçamento interno */
   cursor: pointer; /* Mudança do cursor para indicar interatividade */
   font-size: 24px; /* Tamanho do texto */
+  border-radius: 10px;
 }
 .menu {
   list-style: none; /* Removendo marcadores de lista */
   display: none; /* Ocultando o menu por padrão */
   flex-direction: column; /* Dispondo os itens em coluna */
-  background-color: #e9ebcb; /* Cor de fundo do menu */
+  background-color: #151e3d; /* Cor de fundo do menu */
   padding: 10px; /* Espaçamento interno do menu */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
   width: 200px; /* Largura do menu */
@@ -148,7 +149,7 @@ path:hover {
 
 .menu a {
   text-decoration: none; /* Removendo sublinhado */
-  color: #18361C; /* Cor do texto */
+  color: #add8e6; /* Cor do texto */
   padding: 10px; /* Espaçamento interno dos links */
   display: block; /* Fazendo com que os links ocupem toda a linha */
   width: 100%; /* Fazendo com que os links ocupem toda a largura do menu */
@@ -164,7 +165,7 @@ path:hover {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  background-color: #FFFFCC;
+  background-color: #f8f27c;
   color: #18361C;
 }
 .links a {
@@ -177,9 +178,9 @@ path:hover {
 
 /*carossel*/
 .swiper {
-  width: 60%; /* Alterado para 100% */
+  width: 90%; /* Alterado para 100% */
   height: auto; /* Alterado para auto */
-  padding: 30px;
+  padding: 10px;
 }
 
 .swiper-slide {
@@ -189,14 +190,14 @@ path:hover {
 
 .swiper-slide img {
   display: block;
-  width: 60%; /* Mantido para ocupar todo o espaço disponível */
+  width: 90%; /* Mantido para ocupar todo o espaço disponível */
   height: auto; /* Mantido para ocupar todo o espaço disponível */
   object-fit: contain;
 }
 
 @media (max-width: 768px) { /* Exemplo de media query para telas pequenas */
  .swiper {
-    width: 80%; /* Ajuste para telas menores */
+    width: 90%; /* Ajuste para telas menores */
     height: auto;
   }
 }
@@ -204,7 +205,7 @@ path:hover {
 
 /* cor de fundo geral*/
 body{
-  background-color: #FFFFCC;
+  background-color: #f8f27c;
 }
 
 /* Estilos gerais da group page */
@@ -223,8 +224,8 @@ body, html {
 
 .slide {
   flex: 0 0 auto;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   position: relative;
   scroll-snap-align: start;
   max-width: 100%; /* Garante que o slide não ultrapasse o viewport em dispositivos móveis */
@@ -245,7 +246,7 @@ body, html {
   color: white;
   padding: 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .hidden {
@@ -273,4 +274,19 @@ footer{
   width: 100%;
   height: 110px;
   font-size: 14px;
+}
+
+/* Estilização geral */
+* {
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total do elemento */
+}
+
+/* Contêiner principal */
+.borda {
+  width: 100%; /* Ajusta a largura do contêiner para ocupar toda a largura disponível */
+  max-width: 1200px; /* Define um limite máximo para a largura do contêiner */
+  margin: auto; /* Centraliza o contêiner horizontalmente */
+  padding: 20px; /* Adiciona algum espaço interno ao redor do conteúdo */
+  border: 10px solid #f8f27c; /* Aplica a borda ao contêiner */
+  border-radius: 5px; /* Arredonda os cantos da borda */
 }
