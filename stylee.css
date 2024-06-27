@@ -1,10 +1,66 @@
+@font-face {
+  font-family: 'Graffiti City'; 
+  src: local('Graffiti City'), url('./assets/fontes/Graffiti\ City.otf'); 
+}
+
+/*geral*/
+.titulo{
+  display: flex;
+  width: 100%;
+  height: 450px;
+  text-align:center;
+  color: black;
+  font-family: 'Graffiti City', fallback, sans-serif;
+  font-size: 100%;
+  }
+
+  .tituloFino{
+    text-align: left;
+    color: black;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+   /* font-family: 'Street Wars Demo', fallback, sans-serif;*/
+   font-family: 'Graffiti City', fallback, sans-serif;
+  }
+
+.texto{
+  align-content: center;
+  font-size: 20px;
+  background-color: #FFFFCC;
+  color: black;
+  font-style:unset;
+
+}
+
+.texto1{
+  align-items: center;
+  font-size: 14px;
+  background-color: #FFFFCC;
+  color: black;
+}
+
+.sub{
+  text-align: left;
+  color: black;
+  width: 100%;
+  height: auto;
+  font-family: 'Graffiti City', fallback, sans-serif;
+  font-size: 100%;
+}
+
+.fonte {
+  font-family: 'Graffiti City', fallback, sans-serif;
+}
+
+
 /* stylos do mapa*/
 .container{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E9EBCB;
+  background-color: #FFFFCC;
 }
 svg{
   width: 100%;
@@ -77,11 +133,7 @@ path:hover {
   padding: 10px; /* Espaçamento interno */
   cursor: pointer; /* Mudança do cursor para indicar interatividade */
   font-size: 24px; /* Tamanho do texto */
-  outline: none; /* Removendo o contorno do foco */
 }
-
-
-
 .menu {
   list-style: none; /* Removendo marcadores de lista */
   display: none; /* Ocultando o menu por padrão */
@@ -90,13 +142,9 @@ path:hover {
   padding: 10px; /* Espaçamento interno do menu */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
   width: 200px; /* Largura do menu */
-  z-index: 10; /* Garantindo que o menu fique acima de outros elementos */
+  z-index: 50; /* Garantindo que o menu fique acima de outros elementos */
 }
 
-.menu ul {
-  display: flex; /* Usando flexbox para alinhar os itens horizontalmente */
-  flex-direction: column; /* Dispondo os itens em coluna */
-}
 
 .menu a {
   text-decoration: none; /* Removendo sublinhado */
@@ -107,62 +155,6 @@ path:hover {
   text-align: center; /* Centralizando o texto dos links */
 }
 
-/*stylos group pag*/
-.grupo {
-  display: flex; 
-  align-items: center; 
-  gap: 10px; 
-  background-color: #E9EBCB;
-  color: #18361C;
-}
-
-.foto {
-  border: 1px solid #18361C;
-  border-radius: 50%;
-  width: 30%;
-  height:auto;
-  margin-left: 5px;
-  background-color: #540b0e; 
-  color: #fff3b0;
-}
-
-.espaço{
-  height: 20px;
-  background-color: #E9EBCB;
-}
-
-
-/*geral*/
-.titulo{
-  display: flex;
-  width: 100%;
-  height: 450px;
-  text-align: center;
-  background-color: #18361C;
-  color: #E9EBCB;
-  }
-
-  .tituloFino{
-    text-align: left;
-    background-color: #18361C;
-    color: #E9EBCB;
-    width: 100%;
-    height: 120px;
-    font-size: 18px;
-  }
-
-.texto{
-  font-size: 14px;
-  background-color: #E9EBCB;
-  color: #18361C;
-}
-
-.texto1{
-  align-items: center;
-  font-size: 14px;
-  background-color: #18361C;
-  color: #E9EBCB;
-}
 
 
 /*links homepage*/
@@ -171,16 +163,15 @@ path:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  background-color: #E9EBCB;
+  font-size: 20px;
+  background-color: #FFFFCC;
   color: #18361C;
 }
 .links a {
-  font-size: 14px;
+  font-size: 20px;
   background-color: #18361C;
   color: #E9EBCB;
   text-decoration: none;
-  border-radius: 5px; /* Bordas arredondadas para melhorar a aparência */
 }
 
 
@@ -213,8 +204,65 @@ path:hover {
 
 /* cor de fundo geral*/
 body{
-  background-color: #E9EBCB;
+  background-color: #FFFFCC;
 }
+
+/* Estilos gerais da group page */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  scroll-snap-align: start;
+  max-width: 100%; /* Garante que o slide não ultrapasse o viewport em dispositivos móveis */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  #carrossel {
+      flex-direction: column;
+  }
+
+ .slide {
+      margin-bottom: 20px;
+  }
+}
+
 
 /*rodapé*/
 footer{
