@@ -92,26 +92,32 @@ path:hover {
   transition: fill 0.4s;
 }
 
-/*ferramentas do mapa*/
 .tooltip {
   pointer-events: none;
   position: absolute;
-  font-size: 18px;
+  font-size: 12px;
   text-align: center;
-  background: white;
-  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px; /* Aumentando o padding para mais espaço interno */
   z-index: 5;
-  height: 30px;
-  line-height: 30px;
-  margin: 0 auto;
+  height: auto;
+  line-height: 1.5;
+  margin: 0;
   color: black;
   border-radius: 5px;
   transform: translateX(-50%);
   display: none;
+  overflow-wrap: break-word;
+  white-space: normal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  min-width: 150px; /* Definindo uma largura mínima */
+  max-width: 300px; /* Definindo uma largura máxima */
 }
+
 .tooltip.active {
   display: block;
 }
+
 .tooltip:after {
   content: "";
   position: absolute;
@@ -124,6 +130,7 @@ path:hover {
   border-right: 10px solid transparent;
   border-top: 10px solid white;
 }
+
 
 /*stylos e ferramentas do menu*/
 .menu-btn {
@@ -289,4 +296,8 @@ footer{
   padding: 20px; /* Adiciona algum espaço interno ao redor do conteúdo */
   border: 10px solid #f1e182;/* Aplica a borda ao contêiner */
   border-radius: 5px; /* Arredonda os cantos da borda */
+}
+
+.textoFino{
+  font-size: 9px;
 }
