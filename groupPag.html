@@ -70,6 +70,23 @@
             <img src="./img/grupo/Barbara.jpeg" alt="Foto 1">
             <div class="description hidden">I’m Bárbara, I’m 20 years old and in my free time I enjoy reading, playing guitar and hiking. I graduated from high school in 2022 and right after that I got the opportunity to do an FSJ (year of voluntary social work) in Germany, where I got to work with art and education projects for refugee kids. At the end of last year I returned to Brazil, and I'm currently studying to take the university entrance exam at the end of the year. I plan to study geography, and maybe philosophy too.</div>
         </div>
+        <div class="slide">
+            <img src="./img/grupo/taete2.jpeg" alt="Foto 1">
+            <div class="description hidden">I'm Taetê Ori, 24 years old, daughter of teachers and from the favelas of São Paulo, Brazil.
+                A trained social worker, I graduated in 2023.
+                I have always worked in the social field as a social educator in the Favela with vulnerable and neurotypical children.
+                As an artist from the hood, graffiti artist, and musician, I have been playing instruments since I was 7 years old and have navigated between classical music and Samba School.
+                Percussion is my passion and my refuge.
+                I do graffiti on the streets of São Paulo with the phrase: "Who’s afraid of a Black woman’s mind?" affirming my strength as a Black woman.
+                I am currently the coordinator of the Youth Collective, Mentalize MA, which works with socio-cultural events in the Monte Azul Favela.</div>
+        </div>
+        <div class="slide">
+            <img src="./img/grupo/Emily.jpeg" alt="Foto 1">
+            <div class="description hidden">My name is Emily Evelyn and I am 18 years old. I'm studying English and Business, and I plan to study International Relations in college.
+                Since I was 15 years old, I have participated in some cultural projects, contributing artistically to collective movements that carry out actions with a positive impact on the world.
+                I am a drawer and picrures painter. I'm always looking to learn new things. In my free time, I watch documentaries or play sports with my friends.
+                I'm having the opportunity to leave Brazil for the first time. It will be a great honor to participate in the World Children's Forum.</div>
+        </div>
         
         <!-- Adicione mais slides conforme necessário -->
     </div>
@@ -77,6 +94,31 @@
     <script src="scriipt.js"></script>
 
 </div>
+
+<button id="scrollToTop" class="scroll-to-top">&#9650;</button>
+
+<script> document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTop = document.querySelector(".scroll-to-top");
+  
+    // Mostrar ou esconder o botão baseado na posição de rolagem
+    window.addEventListener("scroll", function() {
+      if (window.pageYOffset > 100) {
+        scrollToTop.style.display = "block";
+      } else {
+        scrollToTop.style.display = "none";
+      }
+    });
+  
+    // Função para rolar para o topo da página
+    scrollToTop.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });</script> 
+  
     <footer>
         <p>&copy; 2024 - Todos os direitos reservados</p>
     </footer>

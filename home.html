@@ -84,6 +84,30 @@ For us, this trip is much more than just learning; it is an opportunity to feel 
 </div>
 
 
+<button id="scrollToTop" class="scroll-to-top">&#9650;</button>
+
+<script> document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTop = document.querySelector(".scroll-to-top");
+  
+    // Mostrar ou esconder o botão baseado na posição de rolagem
+    window.addEventListener("scroll", function() {
+      if (window.pageYOffset > 100) {
+        scrollToTop.style.display = "block";
+      } else {
+        scrollToTop.style.display = "none";
+      }
+    });
+  
+    // Função para rolar para o topo da página
+    scrollToTop.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });</script>
+  
     <footer>
         <p>&copy; 2024 - Todos os direitos reservados</p>
     </footer>

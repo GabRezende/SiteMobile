@@ -16,3 +16,4 @@ document.querySelectorAll('.slide').forEach(slide => {
         event.stopPropagation();
     });
 });
+

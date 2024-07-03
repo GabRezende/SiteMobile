@@ -87,6 +87,9 @@ So let the youth stand up and look at the needs of their peers, unity is resista
 If the state doesn't provide, we will.<br><br>
 Organize yourselves, create collectives, think about your own survival, share information, build safe spaces, think about strategies for expanding ideas.<br><br>
 They want to see us silent and serving the system they created, but do you want to be complacent? You who are from the favelas, you who are the youth, you are the resistance, your body is an affront, be your own and be for yourself the resistance of unity.<br><br>
+Aurora, Bárbara, Emily, Gabriel, Júlia, Kaio, Kira, Taetê e Thiago <br>
+São Paulo <br>
+2024<br>
         </p>
 
             
@@ -130,6 +133,10 @@ They want to see us silent and serving the system they created, but do you want 
                 <img src="./img/banner/foto4.jpg" alt="">
                 <p> Process of making our banner - decoration.</p>
             </div>
+            <div class="swiper-slide"> 
+                <img src="./img/banner/foto5.jpeg" alt="">
+                <p> Process of making our banner </p>
+            </div>
         </div>
 
         <div class="swiper-button-next"></div>
@@ -144,6 +151,7 @@ They want to see us silent and serving the system they created, but do you want 
     <script>
 
         var swiper = new Swiper(".mySwiper", {
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
@@ -159,6 +167,30 @@ They want to see us silent and serving the system they created, but do you want 
 </div>
 
 </div>
+
+<button id="scrollToTop" class="scroll-to-top">&#9650;</button>
+
+<script> document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTop = document.querySelector(".scroll-to-top");
+  
+    // Mostrar ou esconder o botão baseado na posição de rolagem
+    window.addEventListener("scroll", function() {
+      if (window.pageYOffset > 100) {
+        scrollToTop.style.display = "block";
+      } else {
+        scrollToTop.style.display = "none";
+      }
+    });
+  
+    // Função para rolar para o topo da página
+    scrollToTop.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });</script>
 
 <footer>
 	<p>&copy; 2024 - Todos os direitos reservados</p>

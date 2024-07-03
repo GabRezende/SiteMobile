@@ -186,7 +186,13 @@
 		<div class="tooltip"></div>
 	</div>
 	
-	<div class="espaço">
+	<div class="espaço1" >
+		<p>If you want to read the information contained in the interactive map in text format, download the PDF by clicking the button below.</p>
+		<a id="downloadButton" href="./assets/Informations about Brazil (1).pdf" download target="_blank">Download PDF</a>
+		<br>
+		<br>
+
+
     </div>
 
 	<div class="textoFino">  SOURCES <br>
@@ -247,6 +253,30 @@ Qualidade de Vida - Sergipe: IBGE (2021).<br>
 		}
 	</script>
 
+<button id="scrollToTop" class="scroll-to-top">&#9650;</button>
+
+<script> document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTop = document.querySelector(".scroll-to-top");
+  
+    // Mostrar ou esconder o botão baseado na posição de rolagem
+    window.addEventListener("scroll", function() {
+      if (window.pageYOffset > 100) {
+        scrollToTop.style.display = "block";
+      } else {
+        scrollToTop.style.display = "none";
+      }
+    });
+  
+    // Função para rolar para o topo da página
+    scrollToTop.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });</script> 
+  
 <footer>
 	<p>&copy; 2024 - Todos os direitos reservados</p>
 </footer>

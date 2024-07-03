@@ -250,7 +250,7 @@ body, html {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: #add8e6;
   padding: 10px;
   text-align: center;
   font-size: 12px;
@@ -301,3 +301,34 @@ footer{
 .textoFino{
   font-size: 9px;
 }
+
+#downloadButton {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #151e3d;
+  color:#add8e6;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#downloadButton:hover {
+  background-color: #151e3d;
+}
+.espaço1{
+  font-size: 10px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:rgba(21, 30, 61, 0.7); /* Cor branca com transparência */
+  border: none;
+  color: #add8e6;
+  cursor: pointer;
+  padding: 10px; /* Aumente ou diminua para ajustar o tamanho do botão */
+  border-radius: 5px; /* Remove os cantos arredondados, tornando o botão quadrado */
+}
+
+
